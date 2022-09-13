@@ -1,0 +1,19 @@
+# user devcontainer convenience
+#`pip freeze` version when not locked
+#-------------------------------------------------
+
+# ~~~~~~~ fastapi_dev ~~~~~~~
+#fastapi[all]    # same as installing 'fastapi' and 'uvicorn'
+fastapi==0.75.0
+uvicorn
+
+httpx
+httpx[cli]      # CLI (does not work with Conda)
+
+# ~~~~~~~ fastapi_microservices ~~~~~~~
+#fastapi==0.75.0  # revised in above section for same
+redis-om==0.0.20
+# ~~~~~~~ vscode extensions support ~~~~~~~
+rich~=12.2.0
+
+#-------------------------------------------------
