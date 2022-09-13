@@ -3,6 +3,7 @@
 #-------------------------------------------------
 
 # ~~~~~~~ fastapi_dev ~~~~~~~
+<<<<<<< HEAD
 #fastapi[all]    # same as installing 'fastapi' and 'uvicorn'
 fastapi==0.75.0
 uvicorn
@@ -13,6 +14,12 @@ httpx[cli]      # CLI (does not work with Conda)
 # ~~~~~~~ fastapi_microservices ~~~~~~~
 #fastapi==0.75.0  # revised in above section for same
 redis-om==0.0.20
+=======
+fastapi[all]    # same as installing 'fastapi' and 'uvicorn'
+httpx
+httpx[cli]
+
+>>>>>>> 65ed4be4d01ca708248aae485281c9a4734e1c96
 # ~~~~~~~ vscode extensions support ~~~~~~~
 rich~=12.2.0
 
