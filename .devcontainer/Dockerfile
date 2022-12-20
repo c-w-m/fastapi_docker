@@ -25,12 +25,12 @@ CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--al
 # [Optional] If your pip requirements rarely change, uncomment this section to add them to the image.
 
 # original files from the project
-#COPY requirements.txt /tmp/pip-tmp/
-#RUN pip3 --trusted-host pypi.org \
-#    --trusted-host files.pythonhosted.org \
-#    --disable-pip-version-check \
-#    --no-cache-dir \
-#    install -r /tmp/pip-tmp/requirements.txt
+COPY ../requirements.txt /tmp/pip-tmp/
+RUN pip3 --trusted-host pypi.org \
+    --trusted-host files.pythonhosted.org \
+    --disable-pip-version-check \
+    --no-cache-dir \
+    install -r /tmp/pip-tmp/requirements.txt
 
 #COPY requirements-dev.txt /tmp/pip-tmp/
 #RUN pip3 --trusted-host pypi.org \
@@ -40,12 +40,12 @@ CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--al
 #    install -r /tmp/pip-tmp/requirements-dev.txt
 
 # added for devcontainer convenience
-COPY requirements_dev.txt /tmp/pip-tmp/
-RUN pip3 --trusted-host pypi.org \
-    --trusted-host files.pythonhosted.org \
-    --disable-pip-version-check \
-    --no-cache-dir \
-    install -r /tmp/pip-tmp/requirements_dev.txt
+#COPY requirements_dev.txt /tmp/pip-tmp/
+#RUN pip3 --trusted-host pypi.org \
+#    --trusted-host files.pythonhosted.org \
+#    --disable-pip-version-check \
+#    --no-cache-dir \
+#    install -r /tmp/pip-tmp/requirements_dev.txt
 
 #COPY requirements_user.txt /tmp/pip-tmp/
 #RUN pip3 --trusted-host pypi.org \

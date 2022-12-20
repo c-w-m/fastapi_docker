@@ -33,7 +33,6 @@ conda env export --name fastapi_dev39 --file fastapi_dev39_v3.yml
 
 conda install -c conda-forge httpx        # 6 new, h11 downgrade
 conda env export --name fastapi_dev39 --file fastapi_dev39_v4.yml
-<<<<<<< HEAD
 
 conda install -c conda-forge redis-om     # 5 new
 conda env export --name fastapi_dev39 --file fastapi_dev39_v5.yml
@@ -44,6 +43,4 @@ conda env export --name fastapi_dev39 --file fastapi_dev39_v5.yml
 #     '"D:\bld\httpx_1660072387660\_h_env\python.exe"  
 #      "C:\Users\craigmiller\.# conda\envs\fastapi_dev39\Scripts\httpx.exe" ': The system cannot find the file specified.
 
-=======
->>>>>>> 65ed4be4d01ca708248aae485281c9a4734e1c96
 ```
